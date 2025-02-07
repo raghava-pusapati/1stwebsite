@@ -80,11 +80,11 @@ span{
     height:40%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     overflow-x: auto;
 }
 #text::-webkit-scrollbar{
-    background-color: transparent;
+    /* background-color: transparent; */
     height:7px;
 }
 
@@ -107,6 +107,15 @@ span{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+#images::-webkit-scrollbar{
+    background-color: transparent;
+    height:7px;
+}
+
+#images::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+
 #images{
     /* background-color: red; */
     width:100%;
@@ -115,16 +124,14 @@ span{
     overflow-x: auto;
 }
 
-#images::-webkit-scrollbar{
-    background-color: transparent;
-}
+
 
 #images img{
   
     border:5px solid white;
     object-fit: cover;
     height:100%;
-    width:60%;
+    width:100%;
 }
 
 @media (max-width:600px)
@@ -218,4 +225,22 @@ span{
         font-family:Georgia, 'Times New Roman', Times, serif;
     }
 
+
+    #images{
+        /* background-color: red; */
+        width:100%;
+        height:60%;
+        display: flex;
+        overflow-x: auto;
+    }
+    
+    
+    
+    #images img{
+        
+        border:5px solid white;
+        object-fit: cover;
+        height:100%;
+        width:100%;
+    }
 }
